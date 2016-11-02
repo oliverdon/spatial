@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>3D Audio</title>
+</head>
+    
+<body>
+<div id="animation-container"></div>
+<div id="instruct" class="pop">
+    HRTF Positional Audio Demo.<br />
+    Mouselook + WASD.<br />
+    Headphones Recommended. <br />
+    Supported in Firefox and Chrome.
+</div>
+
+<div id="notif" class="pop">
+    Music: Monkey Island by <a href="http://www.jahtari.org/music/JTR%20EP05.htm">Dubmood</a> CC License. <br />
+    A tiny project by <a href="https://www.oliverdon.com/">Oliver Don</a>
+</div>
+
+<div id="controls" class="pop">
+    <audio class="audio-element" src="03_Dubmood_-_Monkey_Island.mp3" controls autoplay loop></audio> 
+</div>
+</body>
+
+<script src="lib/three.min.js"></script>
+<script src="lib/FirstPersonControls.js"></script>
+<script src="3d.js"></script>
+
+<style type="text/css">
+    
+body {
+    background-color: #817568;
+    color: #DEDAE1;
+}
+
+#animation-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#instruct {
+    top: 0;
+    right: 0;
+}
+
+#notif {
+    bottom: 0;
+    left: 0;
+}
+
+#controls {
+    top: 0;
+    left: 0;
+}
+
+.pop {
+    position: absolute;
+    padding: 1rem;
+    opacity: 0.6;
+    background-color: white;
+    color: #5B7A6A;
+}
+</style>
+</html>
